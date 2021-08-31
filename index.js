@@ -12,20 +12,21 @@ function scuberGreetingForFeet(feet){
 
 function ternaryCheckCity(city){
   // Write your code here!
-  if (city === 'NYC') {
-    return greeting = 'Ok, sounds good.';
-  } else {
-    return greeting = 'No go.';
-  }
+  
+    return (city === 'NYC'? 'Ok, sounds good.' : 'No go.');
 }
 
 function switchOnCharmFromTip(tip){
   // Write your code here!
-  if (tip === 'generous') {
-    return greeting = 'Thank you so much.';
-  } else if (tip === 'not as generous') {
-      return greeting = 'Thank you.';
-  } else {
-      return greeting = 'Bye.';
+  switch (tip) {
+    case 'generous' :
+      return `Thank you so much.`;
+      break;
+    case 'not as generous' :
+      return `Thank you.`;
+      break;
+    default: 
+      return `Bye.`;
   }
+    
 }
